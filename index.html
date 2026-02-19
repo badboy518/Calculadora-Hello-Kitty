@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/script.js" defer></script>
+    <title>Hello Kitty 🩷</title>
+
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#ffc0cb">
+<link rel="apple-touch-icon" href="icons/icon-512.png">
+
+</head>
+<body>
+  <audio id="bgmusic" src="https://raw.githubusercontent.com/badboy518/Musica/main/kitty.mp3" autoplay loop muted hidden></audio>
+<script>
+  window.addEventListener("click", () => {
+    const music = document.getElementById("bgmusic");
+    music.muted = false;
+    music.play();
+  });
+</script> 
+  <main>
+    <span id="calculator-background">
+        <div id="calculator">
+            <div id="display">
+              <div id="history">
+                  <p></p>
+              </div>
+              <p id="displayText">0</p>
+            </div>
+
+            <div id="buttons-container">
+                
+                <div id="container-left"> 
+                    <div id="functions">
+                        <button type="button" translate="no" id="allclear" class="btn-style btn-font btn-shadow"> <span class="btn-front functions-colors"> AC</span></button>
+                        <button type="button" translate="no" id="clear" class="btn-style btn-font btn-shadow"> <span class="btn-front functions-colors"> C</span></button>
+                        <button type="button" translate="no" id="delete" class="btn-style btn-font btn-shadow"> <span class="btn-front functions-colors"> Delete</span></button>
+                    </div>
+                    <div id="numbers">
+                      <button type="button" id="1" class="num btn-style btn-font btn-shadow"><span class="btn-front nums-colors">
+                        1
+                      </span>
+                    </button>
+                      <button type="button" id="2" class="num btn-style btn-font btn-shadow">  <span class="btn-front nums-colors">
+                        2
+                      </span></button> 
+                      <button type="button" id="3" class="num btn-style btn-font btn-shadow">  <span class="btn-front nums-colors">
+                        3
+                      </span></button> 
+                      <button type="button" id="4" class="num btn-style btn-font btn-shadow">  <span class="btn-front nums-colors">
+                        4
+                      </span></button> 
+                      <button type="button" id="5" class="num btn-style btn-font btn-shadow">  <span class="btn-front nums-colors">
+                        5
+                      </span></button> 
+                      <button type="button" id="6" class="num btn-style btn-font btn-shadow">  <span class="btn-front nums-colors">
+                        6
+                      </span></button> 
+                      <button type="button" id="7" class="num btn-style btn-font btn-shadow">  <span class="btn-front nums-colors">
+                        7
+                      </span></button>  
+                      <button type="button" id="8" class="num btn-style btn-font btn-shadow">  <span class="btn-front nums-colors">
+                        8
+                      </span></button> 
+                      <button type="button" id="9" class="num btn-style btn-font btn-shadow">  <span class="btn-front nums-colors">
+                        9
+                      </span></button> 
+                    </div>
+                    <div id="bottom-buttons">
+                      <button type="button" id="zero" class="num btn-style btn-font btn-shadow bottom-btn"><span class="bottom-btn-front btn-front nums-colors">
+                        0
+                      </span></button>
+                      <button type="button" id="dot" class="num btn-style btn-font btn-shadow bottom-btn"><span class="dot btn-front nums-colors">.</span></button>
+                    </div>
+                    
+                </div>
+                    
+                <div id="container-right">
+                    <div id="operators">
+                        <button type="button" id="+" class="op-btn-style btn-font btn-shadow">
+                          <span class="op-btn-front operator-colors">+
+                            <img src="./img/helloKittyIcons/cinnamonRoll.png" alt="Cinnamon Roll icon">
+                          </span>
+                          
+                        </button>
+                        <button type="button" id="-" class="op-btn-style btn-font btn-shadow"> <span class="op-btn-front operator-colors">-
+                          <img src="./img/helloKittyIcons/badtzMaru.png" alt="Badtz-Maru icon">
+                        </span>
+                        </button>
+
+                        <button type="button" translate="no" id="*" class="op-btn-style btn-font btn-shadow"><span class="op-btn-front operator-colors">x
+                          <img src="./img/helloKittyIcons/MyMelody.png" alt="My Melody icon"> 
+                        </span>
+                        </button>
+
+                        <button type="button" translate="no" id="/" class="op-btn-style btn-font btn-shadow"><span class="op-btn-front operator-colors"> ÷
+                        <img src="./img/helloKittyIcons/kuromi.gif" alt="Kuromi icon">  
+                        </span>
+                        </button>
+
+                        <button type="button" id="Enter" class="op-btn-style btn-font btn-shadow"><span class="op-btn-front operator-colors"> = 
+                          <img src="./img/helloKittyIcons/helloKitty.png" alt="Hello Kitty icon">
+                        </span> 
+                        </button>
+                    </div>
+                    
+                </div>
+               
+            </div>
+
+        </div>
+    </span>
+  </main>
+
+  <footer>
+      <h1> Creado por <a href="https://github.com/GravityCodes/HelloKittyCalculator">Abner Díaz  <img src="./img/helloKittyIcons/kitty.png" width="35" height="35" alt=""></a></h1>
+  </footer>
+</body>
+</html>
